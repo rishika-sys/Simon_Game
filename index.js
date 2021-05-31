@@ -48,7 +48,7 @@ function checkAns(currLevel)
    else{
      //Play a sound of gameover and apply certain class
 
-         var audio=new Audio("sounds/wrong.mp3").play();
+         var audio=new Audio("wrong.mp3").play();
 
          $("body").addClass("game-over");
          setTimeout(function(){
@@ -76,7 +76,7 @@ function newSequence()
 function playSound(sound)
 {
 
-       var audio=new Audio("sounds/" + sound +".mp3").play();
+       var audio=new Audio(sound +".mp3").play();
 
 }
 function animatePress(currentColor)
